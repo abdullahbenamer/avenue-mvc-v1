@@ -22,10 +22,6 @@ SET time_zone = "+00:00";
 --
 
 -- --------------------------------------------------------
-quotation_instances -> courses
-courses -> training_courses
-quotation_instructors -> instructor_course
-quotation_participants -> groups
 
 --
 -- Table structure for table `categories`
