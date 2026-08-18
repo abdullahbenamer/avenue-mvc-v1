@@ -1,0 +1,148 @@
+/* user_module.css */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 10% 30% 20% 15% 10% 15%;
+    gap: 1px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.grid-header {
+    background-color: #CCC;
+    padding: 5px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 5px;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.row-even {
+    background-color: #EEE;
+}
+
+.row-odd {
+    background-color: #FFF;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-header,
+    .grid-item {
+        text-align: center;
+    }
+}
+
+.btn-add {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 10px auto;
+    display: inline-block;
+}
+
+.btn-add:hover {
+    background-color: #45a049;
+}
+
+.btn-edit {
+    background-color: green;
+    color: white;
+    padding: 4px 7px;
+    font-size: 0.75rem;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    margin-right: 4px;
+}
+
+.btn-edit:hover {
+    background-color: #45a049;
+}
+
+.btn-delete {
+    background-color: #d9534f;
+    color: white;
+    padding: 4px 7px;
+    font-size: 0.75rem;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.btn-delete:hover {
+    background-color: #c9302c;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 6px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/*AVATAR*/
+.avatar-preview {
+    margin-bottom: 0.5rem;
+    display: block;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border: 1px solid #fff;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.breadcrumb li {
+    margin: 0 5px;
+    font-size: 0.85rem;
+}
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+.breadcrumb li.active {
+    font-weight: bold;
+    color: #333;
+}

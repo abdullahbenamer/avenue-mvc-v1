@@ -1,0 +1,61 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 3% 25% 37% 15% 10% 10%;
+    max-width: 97%;
+    margin: 0 auto;
+    background-color: #ccc; /* grid gap color */
+    box-sizing: border-box;
+}
+
+/* Grid cells (headers and data) */
+.grid-cell {
+    background-color: #fff;
+    padding: 8px 6px;
+    font-size: 0.85rem;
+    text-align: left;
+    word-break: break-word;
+    box-sizing: border-box;
+}
+
+/* Header cells */
+.grid-cell.header {
+    background-color: #CCC;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Zebra striping every even row (6 cells per row) */
+.grid-container > .grid-cell:nth-child(n+7):nth-child(12n + 1),
+.grid-container > .grid-cell:nth-child(n+7):nth-child(12n + 2),
+.grid-container > .grid-cell:nth-child(n+7):nth-child(12n + 3),
+.grid-container > .grid-cell:nth-child(n+7):nth-child(12n + 4),
+.grid-container > .grid-cell:nth-child(n+7):nth-child(12n + 5),
+.grid-container > .grid-cell:nth-child(n+7):nth-child(12n + 6) {
+    background-color: #eee;
+}
+
+/* Buttons */
+.btn-edit,
+.btn-delete {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.btn-edit {
+    background-color: #28a745;
+}
+.btn-edit:hover {
+    background-color: #218838;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+.btn-delete:hover {
+    background-color: #c82333;
+}

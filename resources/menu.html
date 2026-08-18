@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Submenu Navigator</title>
+<style>
+    /* Main menu styles */
+    .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu li {
+        display: inline-block;
+        position: relative;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .menu li:hover {
+        background-color: #f4f4f4;
+    }
+
+    /* Submenu styles */
+    .submenu {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .menu li:hover .submenu {
+        display: block;
+    }
+
+    .submenu li {
+        display: block;
+    }
+
+    .submenu li a {
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .submenu li:hover {
+        background-color: #f4f4f4;
+    }
+</style>
+</head>
+<body>
+
+<ul class="menu">
+    <li><a href="read.php">DOCUMENTS</a>
+        <ul class="submenu">
+            <li><a href="index.php">NEW DOC.</a></li>
+        </ul>
+    </li>
+    <li><a href="read_cert.php">CERTIFICATES</a>
+        <ul class="submenu">
+            <li><a href="certificate.php">NEW CERT.</a></li>
+        </ul>
+    </li>
+    <li><a href="read_inv.php">INVOICES</a>
+        <ul class="submenu">
+            <li><a href="invoice.php">NEW INVOICE</a></li>
+        </ul>
+    </li>
+</ul>
+
+</body>
+</html>

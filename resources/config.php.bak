@@ -1,0 +1,4 @@
+<?php
+define('BASE_URL', '/app/'); // if your site is in root folder
+// or define('BASE_URL', '/yourproject/'); if it's in a subfolder
+?>
